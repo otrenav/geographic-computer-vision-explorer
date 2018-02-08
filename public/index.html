@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Google Street View Image Explorer</title>
+        <link href="./static/css/external/bootstrap.min.css" rel="stylesheet">
+        <link href="./static/css/external/bootstrap-extension.css" rel="stylesheet">
+        <link href="./static/css/style.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="page-wrapper">
+                <div class="container-fluid">
+                    <div id="tabs" class="row">
+                        <div class="col-6">
+                            <h1>Google Street View Image Explorer</h1>
+                        </div>
+                        <div class="col-6">
+                            <h1>Developed by Omar Trejo for Dr. Kensuke Teshima</h1>
+                        </div>
+                    </div>
+                    <div id="content" class="row">
+                        <div id="sidebar" class="col-lg-2">
+                            <div class="row">
+                                <div class="col-lg-12 col-sm-8">
+                                    <div class="box">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <h1 class="options-heading">Coordinates</h1>
+                                            </div>
+                                            <div class="col-12">
+                                                <p class="text-danger" style="display: none">Error (check options)</p>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="form-heading">Latitude</div>
+                                                <input type="text" id="form-lat" value="19.433387">
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="form-heading">Longitude</div>
+                                                <input type="text" id="form-lng" value="-99.133041">
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <h1 class="options-heading">Angles & Zoom</h1>
+                                            </div>
+                                            <div class="col-12">
+                                                <div
+                                                    class="form-heading">Heading (0 to 360)</div>
+                                                <input type="text" id="form-heading" value="0">
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="form-heading">FOV (0 to 120)</div>
+                                                <input type="text" id="form-fov" value="90">
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="form-heading">Pitch (-90 to 90)</div>
+                                                <input type="text" id="form-pitch" value="0">
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <button class="pull-right" onclick="addToList()">Add to list</button>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <h1 class="options-heading">List</h1>
+                                            </div>
+                                            <div class="col-12">
+                                                <textarea id="list"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <button class="pull-right" onclick="download()">Download</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="results" class="col-lg-10">
+                            <div id="map" class="row">
+                                <div class="col-12">
+                                    <div class="img-canvas box">
+                                        <img id="gsv-image" src=""></img>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="./static/js/external/jquery.min.js"></script>
+        <script src="./static/js/main.js"></script>
+    </body>
+</html>

@@ -1,0 +1,155 @@
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #3c4452;
+    background: #3c4452;
+    height: 100%;
+    color: #96a2b4;
+    margin: 0;
+}
+
+hr {
+    border-color: #5e646d;
+}
+
+#wrapper {
+    height: 100%;
+    width: 100%;
+}
+
+#page-wrapper {
+    background: #3c4452;
+    height: 100%;
+}
+
+#tabs {
+    text-align: center;
+    padding-bottom: 1em;
+    padding-top: 1em;
+    cursor: pointer;
+}
+
+#tabs > div > h1 {
+    font-size: 1.5em;
+    font-weight: 300;
+}
+
+#map-canvas {
+    width: 100%;
+    height: 1000px;
+}
+
+#color-legend {
+    max-height: 10px;
+}
+
+#sidebar {
+    margin-bottom: 2em;
+}
+
+.options-heading {
+    font-size: 1.5em;
+}
+
+.group-option,
+.options-heading {
+    font-weight: 300;
+    color: #7c8aa0;
+}
+
+.container-fluid {
+    padding-bottom: 2em;
+    padding-right: 2em;
+    padding-left: 2em;
+    height: 100%;
+}
+
+.box {
+    margin-bottom: 15px;
+    overflow: hidden;
+    color: #dce2ec;
+    padding: 25px;
+}
+
+.box-text {
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+.icon {
+    position: absolute;
+    margin-top: -0.4em;
+    font-size: 14em;
+    color: #3b4250;
+}
+
+.progress {
+    background-color: rgba(120, 130, 140, .28);
+    -webkit-box-shadow: none!important;
+    box-shadow: none!important;
+    margin-bottom: 18px;
+    border-radius: 0;
+    overflow: hidden;
+    height: 4px;
+}
+
+.text-danger {
+    color: #fb9678 !important;
+}
+
+.text-muted {
+    color: #8d9ea7 !important;
+}
+
+.text-success {
+    color: #00c292 !important;
+}
+
+.text-primary {
+    color: #ab8ce4 !important;
+}
+
+.text-megna {
+    color: #01c0c8 !important;
+}
+
+.box, input, select, textarea {
+    background: #353c48;
+}
+
+input, button, textarea {
+    border: 2px solid #5e646d;
+    border-radius: 2px;
+    padding: 0.5em;
+    width: 100%;
+}
+
+textarea {
+    width: 100%;
+}
+
+button {
+    margin-top: 1em;
+    background: #5c626e;
+}
+
+.form-heading {
+    padding-bottom: 0.5em;
+    padding-top: 1em;
+    color: #727d94;
+}
+
+.img-canvas {
+    text-align: center;
+    align: center;
+    margin: auto:
+}
+
+#list {
+    color: #96a2b4;
+}
