@@ -14,6 +14,7 @@ var getOptions = function() {
 
 var buildUrl = function() {
     url = 'https://maps.googleapis.com/maps/api/streetview?&size=1280x720';
+    url += `&key=AIzaSyDVAV7aIAwvXjeDNlb4XxFzeUiGuqgCBtc';
     url += `&location=${LAT},${LNG}`;
     url += `&heading=${HEADING}`;
     url += `&fov=${FOV}`;
