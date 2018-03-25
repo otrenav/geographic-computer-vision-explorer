@@ -27,12 +27,24 @@ button {
     color: #96a2b4;
 }
 
+.upload-button-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.upload-button-wrapper input[type=file] {
+    position: absolute;
+    font-size: 2em;
+    opacity: 0;
+    left: 0;
+    top: 0;
+}
+
 table {
     text-align: left;
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 1em;
-    margin-top: 3em;
 }
 
 tr, th, td {
@@ -78,8 +90,17 @@ tr, th, td {
     margin-bottom: 2em;
 }
 
+#button-download, #button-upload {
+    margin: 2em;
+    width: 11em;
+}
+
 .options-heading {
     font-size: 1.5em;
+}
+
+.table-heading {
+    margin-top: 1.5em;
 }
 
 .group-option,

@@ -28,68 +28,58 @@
                                     <div class="box">
                                         <div class="row">
                                             <div class="col-12">
-                                                <h1 class="options-heading">Coordinates</h1>
+                                                <h1 class="options-heading">Edit</h1>
                                             </div>
                                             <div class="col-12">
                                                 <p class="text-danger" style="display: none">Error (check options)</p>
                                             </div>
                                             <div class="col-12">
+                                                <div class="form-heading">Name</div>
+                                                <input type="text" id="form-name" value="Name">
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="form-heading">Group</div>
+                                                <input type="number" id="form-group" value="0" min="0">
+                                            </div>
+                                            <div class="col-12">
                                                 <div class="form-heading">Latitude</div>
-                                                <input type="text" id="form-lat" value="19.433387">
+                                                <input type="number" id="form-lat" value="19.433387">
                                             </div>
                                             <div class="col-12">
                                                 <div class="form-heading">Longitude</div>
-                                                <input type="text" id="form-lng" value="-99.133041">
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-12">
-                                                <h1 class="options-heading">Angles & Zoom</h1>
+                                                <input type="number" id="form-lng" value="-99.133041">
                                             </div>
                                             <div class="col-12">
                                                 <div
                                                     class="form-heading">Heading (0 to 360)</div>
-                                                <input type="text" id="form-heading" value="0">
-                                            </div>
-                                            <div class="col-12">
-                                                <div class="form-heading">FOV (0 to 120)</div>
-                                                <input type="text" id="form-fov" value="90">
+                                                <input type="number" id="form-heading" value="0" min="0" max="360">
                                             </div>
                                             <div class="col-12">
                                                 <div class="form-heading">Pitch (-90 to 90)</div>
-                                                <input type="text" id="form-pitch" value="0">
+                                                <input type="number" id="form-pitch" value="0" min="-90" max="90">
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="form-heading">FOV (0 to 120)</div>
+                                                <input type="number" id="form-fov" value="120" min="0" max="120">
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="form-heading">Comment</div>
+                                                <input type="text" id="form-comment" value="Comment">
                                             </div>
                                         </div>
+                                        <!-- <hr>
+                                             <div class="row">
+                                             <div class="col-12">
+                                             <button onclick="googleStreetViewHistoricalAPI()">
+                                             <i class="fa fa-search"></i> Historical Images
+                                             </button>
+                                             </div>
+                                             </div> -->
                                         <hr>
                                         <div class="row">
                                             <div class="col-12">
                                                 <button onclick="googleVisionAPI()">
                                                     <i class="fa fa-search"></i> Classify Image
-                                                </button>
-                                            </div>
-                                        </div>
-                                        <hr>
-                                        <div class="row">
-                                            <div class="col-12">
-                                                <button class="pull-right"
-                                                        onclick="addToList()">
-                                                    <i class="fa fa-plus-circle"></i> Add to list
-                                                </button>
-                                            </div>
-                                        </div>
-                                        <hr>
-                                        <div class="row">
-                                            <div class="col-12">
-                                                <h1 class="options-heading">List</h1>
-                                            </div>
-                                            <div class="col-12">
-                                                <textarea id="list"></textarea>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-12">
-                                                <button class="pull-right" onclick="download()">
-                                                    <i class="fa fa-download"></i> Download
                                                 </button>
                                             </div>
                                         </div>
@@ -102,7 +92,36 @@
                                 <div class="col-12">
                                     <div class="img-canvas box">
                                         <img id="gsv-image" src=""></img>
-                                        <div id="table"></div>
+                                        <div class="col-12">
+                                            <h1 class="options-heading table-heading">Current Data</h1>
+                                        </div>
+                                        <table id="data-table">
+                                            <tr>
+                                                <th>Delete</th>
+                                                <th>Name</th>
+                                                <th>Group</th>
+                                                <th>Latitude</th>
+                                                <th>Longitude</th>
+                                                <th>Heading</th>
+                                                <th>Pitch</th>
+                                                <th>FOV</th>
+                                                <th>Comment</th>
+                                            </tr>
+                                        </table>
+                                        <div id="classification-table"></div>
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="upload-button-wrapper">
+                                                    <button id="button-upload">
+                                                        <i class="fa fa-upload"></i> Upload
+                                                    </button>
+                                                    <input id="file-upload" name="file-upload" type="file">
+                                                </div>
+                                                <button id="button-download" onclick="download()">
+                                                    <i class="fa fa-download"></i> Download
+                                                </button>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -113,6 +132,7 @@
         </div>
         <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
         <script src="./static/js/external/jquery.min.js"></script>
+        <script src="./static/js/external/papaparse.min.js"></script>
         <script src="./static/js/main.js"></script>
     </body>
 </html>
