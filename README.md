@@ -3,7 +3,7 @@
 
 ---
 
-# Detecting urban evolution with computer vision
+# Geographic Computer Vision Explorer
 
 - Omar Trejo
 - January, 2018
