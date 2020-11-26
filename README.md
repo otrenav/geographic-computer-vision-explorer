@@ -1,9 +1,12 @@
 
+[Delta Lab](https://links.deltalab.ai/website) | [Twitter](https://links.deltalab.ai/twitter) | [LinkedIn](https://links.deltalab.ai/linkedin)
+
+---
+
 # Detecting urban evolution with computer vision
 
 - Omar Trejo
 - January, 2018
-- Work in progress
 
 Objective: replicate the methodology used by Nail (et al) papers:
 
@@ -780,3 +783,7 @@ Work in progress.
 ## 3. Provide an estimate for a "safety" score for each location
 
 Work in progress.
+
+---
+
+> "We are the people we have been waiting for."
